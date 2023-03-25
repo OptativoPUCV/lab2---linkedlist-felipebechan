@@ -117,3 +117,9 @@ Sat Mar 25 19:34:45 -03 2023:
  tests:  10|2
 total_score: 45/70
 a05e70d
+Sat Mar 25 20:09:21 -03 2023: 
+ list.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+ tests:  10|2
+total_score: 45/70
+0e1f468
