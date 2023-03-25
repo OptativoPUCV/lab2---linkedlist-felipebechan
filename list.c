@@ -147,7 +147,8 @@ void * popBack(List * list) {
 void* popCurrent(List* list) {
     //porfa funciona 
     Node* current = list -> current;
-
+    void* data = current->data;
+    
     if (current -> prev == NULL)
     {
         list -> head = current -> next;
@@ -164,7 +165,6 @@ void* popCurrent(List* list) {
     {
         current -> next -> prev = current -> prev;
     }
-    void* data = current->data;
 
     free(current);
     list->current = NULL;
