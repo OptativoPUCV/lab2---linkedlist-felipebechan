@@ -41,3 +41,9 @@ In file included from test.c:5:
 1 error generated.
 Compilation failed
 0ae152e
+Sat Mar 25 18:34:23 -03 2023: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+bb0bf6a
