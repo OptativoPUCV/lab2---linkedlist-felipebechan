@@ -148,7 +148,6 @@ void* popCurrent(List* list) {
     //porfa funciona 
     Node* current = list -> current;
 
-    // check si current es head
     if (current -> prev == NULL)
     {
         list -> head = current -> next;
@@ -157,8 +156,6 @@ void* popCurrent(List* list) {
     {
         current -> prev -> next = current -> next;
     }
-
-    // check si current es tail
     if (current -> next == NULL)
     {
         list -> tail = current -> prev;
@@ -167,14 +164,10 @@ void* popCurrent(List* list) {
     {
         current -> next -> prev = current -> prev;
     }
-
-   
     void* data = current->data;
 
-    // free current
     free(current);
     list->current = NULL;
-
     return data;
 }
 
