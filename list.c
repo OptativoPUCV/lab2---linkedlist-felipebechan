@@ -90,7 +90,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-    // h[] <- listoo
+    // 
     Node* nuevoNodo = createNode(data);
     nuevoNodo -> next = list -> head;
     if (list -> head == NULL)
