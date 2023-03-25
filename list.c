@@ -63,7 +63,13 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    return NULL;
+    //funciona plsss
+    if(list-> tail)
+    {
+        list -> current = list -> tail;
+    }
+
+    return  list -> current -> data;
 }
 
 void * prevList(List * list) {
