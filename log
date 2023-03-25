@@ -1,0 +1,6 @@
+Sat Mar 25 18:18:47 -03 2023: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+f3de3e5
