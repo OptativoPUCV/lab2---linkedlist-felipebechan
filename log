@@ -10,3 +10,13 @@ Sat Mar 25 18:19:26 -03 2023:
  tests:  1|5
 total_score: 10/70
 8ad5038
+Sat Mar 25 18:21:20 -03 2023: 
+ list.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+./list.c:48:1: error: non-void function does not return a value in all control paths [-Werror,-Wreturn-type]
+}
+^
+1 error generated.
+Compilation failed
+c3e24a8
