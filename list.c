@@ -132,11 +132,7 @@ void pushCurrent(List * list, void * data) {
 }
 
 void * popFront(List * list) {
-    Node * eliminarNodo = list->head;
-    void * data =  eliminarNodo->data;
-    list->head= eliminarNodo -> next;
-    list->head->prev=NULL;
-    return data;
+
 }
 
 void * popBack(List * list) {
