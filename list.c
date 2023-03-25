@@ -93,17 +93,13 @@ void pushFront(List * list, void * data) {
     // h[] <-
     Node* nuevoNodo = createNode(data);
     nuevoNodo -> next = list -> head;
-    if (list -> head)
+    if (list -> head == NULL)
     {
-        list -> head -> prev = nuevoNodo;
+        list -> head= nuevoNodo;
+        list -> tail= nuevoNodo;
     }
-    list -> head = nuevoNodo;
-    nuevoNodo -> prev = NULL;
-
-    if(list -> tail == NULL)
-    {
-        list -> tail = list -> head;
-    }
+    list -> head -> prev = nuevoNodo -> next;
+    list -> head= nuevoNodo;
     }
 
 
