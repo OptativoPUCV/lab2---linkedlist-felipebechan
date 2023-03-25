@@ -4,3 +4,9 @@ Sat Mar 25 18:18:47 -03 2023:
  tests:  1|5
 total_score: 10/70
 f3de3e5
+Sat Mar 25 18:19:26 -03 2023: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+8ad5038
