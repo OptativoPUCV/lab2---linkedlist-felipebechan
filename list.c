@@ -132,20 +132,46 @@ void pushCurrent(List * list, void * data) {
 }
 
 void * popFront(List * list) {
+
+    // no da puntaje
     list->current = list->head;
     return popCurrent(list);
 }
 
 void * popBack(List * list) {
+    // no da puntaje
     list->current = list->tail;
     return popCurrent(list);
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+    //1.check !=null c-prev≈
+    if(list -> current -> prev != NULL)
+    {
+    list -> current -> prev -> next = list -> current -> next;
+    }
+    //2.check null c-prev
+    if(list -> current -> prev == NULL)
+    {
+    list -> head = list -> current -> next;
+    }
+    // 1 en next
+    if(list->current->next != NULL)
+    {
+    list->current->next->prev = list->current->prev;
+    }
+    
+    if(list->tail == list->current)
+    {
+    list->tail = list->tail->prev;
+    }
+
+    return (list->current->data);
 }
 
+
 void cleanList(List * list) {
+    // no da puntaje
     while (list->head != NULL) {
         popFront(list);
     }
