@@ -114,7 +114,7 @@ void pushCurrent(List * list, void * data) {
 
     if(list -> current == NULL)
     {
-        return NULL;
+        return;
     }
 
     //check checkear si estmaos en la ultima
