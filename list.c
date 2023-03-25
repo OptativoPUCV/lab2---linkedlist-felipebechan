@@ -136,6 +136,7 @@ void * popFront(List * list) {
     void * data =  eliminarNodo->data;
     list->head= eliminarNodo -> next;
     list->head->prev=NULL;
+    return data;
 }
 
 void * popBack(List * list) {
